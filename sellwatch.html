@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta charset="UTF-8">
+        <title>Senderov Watches - Sell your Watch</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").hide();
+  });
+});
+</script>
+    </head>
+    <body>
+        <header>
+            <img src="images/logo2.jpg" alt="SWT" width="150" height="150">
+        	<h1> Welcome to Senderov Watches - Sell your Watch </h1>
+        </header>
+        <nav><ul>
+<li class ="a"><a href="index.html"> Home Page</a></li>
+<li class ="a"><a href="resources.html"> Resources</a></li>
+<li class ="a"><a href="deal.html">Today's Deal</a></li>
+<li class ="a"><a href="sale.html">Inventory for Sale</a></li>
+<li class ="a"><a href="sold.html">Sold Inventory</a></li>
+<li class ="a"><a href="sellwatch.html">Sell your Watch</a></li>
+<li class ="a"><a href="contactus.php">Contact Us</a></li>
+</ul>
+</nav>
+        <main>
+         
+            <main>
+             <p>
+             <h2>Sell Your Watch</h2>
+             <p>If you have any particular timepiece that you want to sell, please feel out this form and our organization will contact you soon.
+            </p>
+            
+             <fieldset>
+
+            <form method="post" enctype="multipart/form-data" action="" autocomplete="on">
+                <h2>Form</h2>
+                Name: <input type="text" name="name" id="name">
+                <span class="error">* <?php echo $nameErr; ?></span>
+                <br><br>
+                Last name: <input type="text" name="lname" id="lname">
+                <span class="error">* <?php echo $lnameErr; ?></span>
+                <br><br>
+                Email: <input type="text" name="email" id="dob" >
+                <br><br>
+                Phone number: <input type="text" name="pnumber" id="cborn">
+                <span class="error">* <?php echo $pnumberErr; ?></span> <br><br>
+                Watch description:<br> <textarea name="comm" id="pd" rows="10" cols="30"></textarea>
+                <span class="error">* <?php echo $commErr; ?></span>
+                <br><br>
+                <fieldset>
+               
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                Select image to upload:
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" value="Upload Image" name="submit"></form>
+            <span class="error">* <?php echo $imgErr; ?></span>
+<br><br>
+      
+                <input type="submit" value="Submit">
+                <br><br>
+               
+                <br><br></form>
+ </fieldset>
+           
+             <hr>
+        </main>
+            </p
+            <hr>
+        </main>
+        
+        <footer><p> <a href="index.html"> Home Page</a> | <a href="resources.html"> Resources</a> | <a href="deal.html">Today's Deal</a> | <a href="sale.html">Inventory for Sale</a> | 
+        <a href="sale.html">Inventory for Sale</a> | <a href="sold.html">Sold Inventory</a> | <a href="sellwatch.html">Sell your Watch</a> | <a href="sellwatch.html">Sell your Watch</a> | 
+        <a href="contatcus.php">Contact Us</a></footer>
+    </body>
+   
+</html>
